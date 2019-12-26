@@ -24,23 +24,35 @@
       }
    }
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Login System</title>
+   <title>Login System</title>
+   <link rel="stylesheet" type="text/css" href="css/login.css">
 </head>
 <body>
-	<div class="login-section">
-		<form method="post">
-			<label>Username:</label>
-			<input type="text" name="username"><br>
-			<label>Password</label>
-			<input type="password" name="password"><br>
-			<button>Submit</button>
-		</form>
-		<p><?php echo $error;?></p>
+   <div class="login-section">
+      <div class="login-box">
+         <div class="logo">
+            <img src="images/logo.png">
+         </div>
+         <form method="post">
+            <div class="form-group">
+               <label>Username:</label>
+               <input type="text" name="username" class="form-control">
+            </div>
+            <div class="form-group">
+               <label>Password:</label>
+               <input type="password" name="password" class="form-control">
+            </div>
+            <button class="btn">Login</button>
+         </form>
+         <p><?php echo $error;?></p>
+      </div>
 
-	</div>
+   </div>
 
 </body>
 </html>
+
